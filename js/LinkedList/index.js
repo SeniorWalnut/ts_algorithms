@@ -28,9 +28,28 @@ var List = (function () {
             current = current.next;
         }
     };
-    List.prototype.unshift = function () { };
-    List.prototype.shift = function () { };
-    List.prototype.insert = function (index, val) { };
+    List.prototype.insert = function (val, index) {
+        if (index === void 0) { index = 0; }
+        var ind = 0;
+        var cur = this.head;
+        var node = new ListNode(val);
+        if (index === 0) {
+            node.next = this.head;
+            this.head = node;
+            return;
+        }
+        while (ind !== index - 1 && cur.next !== null) {
+            ind++;
+            cur = cur.next;
+        }
+        if (ind < index - 1 && cur.next === null) {
+            cur.next = node;
+            return;
+        }
+        node.next = cur.next;
+        cur.next = node;
+        return;
+    };
     List.prototype.delete = function (val) {
         var ind = this.find(val);
         var cur = this.head;

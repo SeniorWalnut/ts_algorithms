@@ -1,8 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var index_1 = require("./LinkedList/index");
-var l = new index_1.List(5);
-l.append(6);
-l.delete(6);
-l.log();
+var index_1 = require("./DoublyLinkedList/index");
+var dl = new index_1.DoublyList(5);
+dl.append(6);
+console.log(dl);
 //# sourceMappingURL=main.js.map

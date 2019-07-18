@@ -1,0 +1,19 @@
+{
+  "name": "ts_algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeniorWalnut/ts_algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeniorWalnut/ts_algorithms/issues"
+  },
+  "homepage": "https://github.com/SeniorWalnut/ts_algorithms#readme"
+}
