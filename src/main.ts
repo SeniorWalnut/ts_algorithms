@@ -1,6 +1,11 @@
 import { List } from './LinkedList/index';
 import { DoublyList } from './DoublyLinkedList/index';
 
-let dl = new DoublyList(5);
-dl.append(6);
-console.log(dl);
+let dl = new DoublyList();
+dl.insertStart(6);
+dl.insertEnd(5);
+dl.insertEnd(4);
+
+dl.deleteEnd();
+dl.deleteList();
+dl.logForward();
